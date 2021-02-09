@@ -1,9 +1,7 @@
 function login() {
   var email = document.getElementById('email').value
   var pass = document.getElementById('pass').value
-  firebase.auth().signInWithEmailAndPassword(email, pass)
-  
-  
+  firebase.auth().signInWithEmailAndPassword(email, pass)  
   .then((userCredential) => {
     alert('Logged in')
     location.replace('dashboard.html')
