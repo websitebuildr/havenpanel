@@ -3,6 +3,7 @@ function getData() {
     db.collection('users').where("place", "==", i).get().then((data)=>{
       data.forEach((doc)=>{
         if(doc.data().name != undefined || doc.data().bio != undefined){
+          
           // div 1 - outermost div
           var div1 = document.createElement('div')
           var att_div1 = document.createAttribute('class')
