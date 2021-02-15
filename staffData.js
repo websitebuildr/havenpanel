@@ -1,5 +1,5 @@
 function getData() {
-  for(var i = 1; i<=7; i++){
+  for(var i = 1; i<=8; i++){
     db.collection('users').where("place", "==", i).get().then((data)=>{
       data.forEach((doc)=>{
         if(doc.data().name != undefined || doc.data().bio != undefined){
